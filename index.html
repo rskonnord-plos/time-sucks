@@ -1,411 +1,438 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+    <title>Time Sucks</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A grumpy lightning talk">
+    <meta name="author" content="Ryan Skonnord">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section>
+	  <h1>Time Sucks</h1>
+	  <h3>A grumpy lightning talk<br/>  by Ryan Skonnord</h3>
+	</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+        <section>
+          <h2>Why does time suck?</h2>
+          <ol>
+            <li class="fragment">Never have enough of it</li>
+            <li class="fragment">Requires management skills</li>
+            <li class="fragment">Eventually kills you</li>
+          </ol>
+        </section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+        <section>
+          <h2>But most of all...</h2>
+          <p class="fragment">It causes bugs!</p>
+          <p class="fragment">
+            The Internet offers a
+            <a href="http://infiniteundo.com/post/25326999628/">two</a>-<a href="http://infiniteundo.com/post/25509354022/">part</a>
+            list of 113 ways that time screws up software.
+          </p>
+        </section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+        <section>
+          <p>
+            There are many contenders for the biggest cause of time-related
+            bugs...
+          </p>
+          <ul>
+            <li class="fragment">time zones</li>
+            <li class="fragment">Daylight Saving Time</li>
+            <li class="fragment">clock synchronization</li>
+          </ul>
+          <p class="fragment">
+            but today I'll be focusing on my personal pet peeve...
+          </p>
+          <p class="fragment"><strong>false precision.</strong></p>
+        </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        <section>
+          <p>A joke!</p>
+          <aside class="notes">
+            <!-- Here is the joke to tell verbally while this slide is showing. -->
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+            A teacher takes an elementary class to the science museum. They
+            look at a dinosaur fossil. The tour guide says, "This fossil is
+            from a dinosaur that died sixty-five million and two years ago."
+            The teacher asks, "How can you know that?" The tour guide says,
+            "Well, when they hired and trained me, they said it was sixty-five
+            million years old. And I've worked here for two years."
+          </aside>
+        </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+        <section>
+          <h2>What not to do</h2>
+          <h3 class="fragment">(a.k.a., what we do)</h3>
+          <table>
+            <tr>
+              <td>Input</td>
+              <td><code>"2016-03-04"</code></td>
+            </tr>
+            <tr>
+              <td>Stored as</td>
+              <td><code>2016-03-04 00:00:00 PST</code></td>
+            </tr>
+            <tr>
+              <td>Equivalent to</td>
+              <td><code>2016-03-04 08:00:00 UTC</code></td>
+            </tr>
+          </table>
+        </section>
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+        <section>
+          <h2>The culprit</h2>
+          <p class="fragment">
+            The year 1996 and the <code>Date</code> class.
+          </p>
+          <p class="fragment">
+            An annoyingly one-size-fits-all approach to storing and
+            representing time values, riddled with early-OOP antipatterns.
+          </p>
+        </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+        <section>
+          <h2>Other problems with <code>Date</code></h2>
+          <ul>
+            <li class="fragment">It's mutable</li>
+            <ul>
+              <li class="fragment">
+                In case noon spontaneously mutates into 2:30
+              </li>
+            </ul>
+            <li class="fragment">
+              Magic numbers instead of enums
+            </li>
+            <li class="fragment">
+              It doesn't contain time zone information but
+              its <code>toString</code> pretends it does
+            </li>
+            <li class="fragment">
+              Do I want
+              <code>java.util.Date</code>, <code>java.util.Calendar</code>,
+              or <code>java.sql.Date</code>?
+            </li>
+          </ul>
+        </section>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+        <section>
+          <h2>The solution</h2>
+          <p>
+            <a href="http://www.joda.org/joda-time/">Joda-Time</a>!
+          </p>
+          <p>
+            Or, as it is known in Java 8, the <code>java.time.*</code> package.
+          </p>
+        </section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+        <section>
+          <h2>What is Joda-Time?</h2>
+          <p>
+            A library of improved classes for representing time.
+          </p>
+          <table>
+            <tr>
+              <td>Java, pre-8</td>
+              <td>Few classes</td>
+              <td>Overloaded and complex</td>
+            </tr>
+            <tr>
+              <td>Joda-Time</td>
+              <td>Larger and more complex selection of classes</td>
+              <td>Each class is simple</td>
+            </tr>
+          </table>
+        </section>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+        <section>
+          <p>
+            The remainder of the talk will be a brief tour of Joda-Time's basic
+            classes.
+          </p>
+          <p class="fragment">
+            If you are not a Java coder, I hope it will provide a good
+            philosophical example.
+          </p>
+        </section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+        <section>
+          <h2>Instant</h2>
+          <ul>
+            <li>
+              Represents an instantaneous point in the universal time line
+            </li>
+            <li>
+              Independent of time zones and locale
+            </li>
+            <li>
+              Equivalent to a number of seconds after the Unix epoch
+            </li>
+          </ul>
+          <p class="fragment"><strong>Example:</strong><br/>
+            Neil Armstrong first stepped onto the Moon at
+            <br/><strong>July 21, 1969, 02:56 UTC</strong>.
+          </p>
+        </section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
+        <section>
+          <h2>LocalDate</h2>
+          <ul>
+            <li>
+              Represents a date on the ISO-8601 (Gregorian) calendar
+            </li>
+            <li>
+              Independent of time zones and locale
+            </li>
+            <li class="fragment">
+              A time zone is needed to introduce time-of-day details (e.g., at
+              what <code>Instant</code> did the day begin)
+            </li>
+          </ul>
+          <p class="fragment"><strong>Example:</strong><br/>
+            The release date of the movie <i>Primer</i> was
+            <br/><strong>October 8, 2004</strong>.
+          </p>
+        </section>
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
+        <section>
+          <h2>LocalTime</h2>
+          <ul>
+            <li>
+              Represents a time of day ("as seen on a wall clock")
+            </li>
+            <li>
+              Belongs to no particular day
+            </li>
+            <li>
+              Independent of time zones and locale
+            </li>
+          </ul>
+          <p class="fragment"><strong>Example:</strong><br/>
+            WiFri begins at
+            <br/><strong>4:30 PM</strong>.
+          </p>
+        </section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+        <section>
+          <h2>MonthDay</h2>
+          <ul>
+            <li>
+              Represents a date on the ISO-8601 (Gregorian) calendar during no
+              particular year
+            </li>
+            <li>
+              Independent of time zones and locale
+            </li>
+          </ul>
+          <p class="fragment"><strong>Example:</strong><br/>
+            Bastille Day is celebrated on
+            <br/><strong>July 14</strong>.
+          </p>
+        </section>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
+        <section>
+          <h2>LocalDateTime</h2>
+          <ul>
+            <li>
+              Represents a time of a particular day
+            </li>
+            <li>
+              Independent of time zones and locale
+            </li>
+            <li>
+              <code>LocalDateTime</code> + time zone = <code>Instant</code>
+            </li>
+          </ul>
+          <p class="fragment"><strong>Example:</strong><br/>
+            The next <i>Game of Thrones</i> season premiere episode will air
+            <br/><strong>April 24, 2016 at 9:00 PM</strong>.
+          </p>
+        </section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+        <section>
+          <h2>Times in places</h2>
+          <p>
+            <code>ZonedDateTime</code> and <code>OffsetDateTime</code>
+            represent date-and-timestamps in particular time zones.
+          </p>
+          <p class="fragment">
+            Both can be translated into <code>Instant</code> objects.
+          </p>
+        </section>
 
-    var nodes = document.querySelectorAll( selector );
+        <section>
+          <h2>Time zone versus offset?</h2>
+          <p>
+            An <strong>offest</strong> is just a number of hours offset from
+            UTC.
+          </p>
+          <p class="fragment">
+            A <strong>time zone</strong> defines an offset, with complicated
+            baggage about stuff like Daylight Saving Time.
+          </p>
+          <p class="fragment"><strong>Example:</strong><br/> The Pacific Time
+            Zone's offset is equal to UTC minus eight hours in the winter and
+            UTC minus seven hours in the summer.
+          </p>
+        </section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+        <section>
+          <h2>Duration</h2>
+          <ul>
+            <li>
+              Represents an amount of time, as measured on a clock
+            </li>
+            <li>
+              Represents no particular start or end time, only the length
+            </li>
+            <li>
+              Independent of time zones and locale
+            </li>
+          </ul>
+          <p class="fragment"><strong>Example:</strong><br/>
+            Regulation time in a game of soccer is
+            <br/><strong>90 minutes</strong>.
+          </p>
+        </section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+        <section>
+          <h2>Period</h2>
+          <ul>
+            <li>
+              Represents an interval between calendar dates
+            </li>
+            <li>
+              Represents no particular start or end dates, only the length
+            </li>
+            <li>
+              Independent of time zones and locale
+            </li>
+          </ul>
+          <p class="fragment"><strong>Example:</strong><br/>
+            A warranty lasts for
+            <br/><strong>90 days</strong>.
+          </p>
+        </section>
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+        <section>
+          <h3>
+            Why two classes for <code>Duration</code> and <code>Period</code>?
+          </h3>
+          <p class="fragment">
+            To avoid false precision!
+          </p>
+          <p class="fragment">
+            Days, as measured on a calendar, don't neatly translate into
+            24-hour intervals.
+          </p>
+          <p class="fragment">
+            What if Daylight Saving Time begins or ends during the period? What
+            if you travel between time zones?
+          </p>
+          <p class="fragment">
+            Representing a 90-day warranty as 2,160 hours is silly.
+          </p>
+        </section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+        <section>
+          <h2>Time units</h2>
+          <p>
+            The <code>java.time.temporal.*</code> package provides nice enums
+            for every time unit and calendar field you can think of.
+          </p>
+          <p class="fragment">
+            Fear magic numbers no longer.
+          </p>
+        </section>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+        <section>
+          <h2>Other calendars</h2>
+          <p>
+            But I thought the whole point of the <code>Calendar</code> class
+            was to avoid ethnocentric preference for the Gregorian calendar?
+          </p>
+          <p class="fragment" style="font-size:80%">
+            It's not Gregorian; it's ISO-8601.
+          </p>
+          <p class="fragment" style="font-size:60%">
+            Can't be ethnocentric with "International" right in the name.
+          </p>
+          <p class="fragment">
+            The <code>java.time.chrono.*</code> package has got you covered with
+            library classes for Islamic, Japanese, Chinese, and Thai calendars.
+          </p>
+        </section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+        <section>
+          <p>
+            Time left for questions?
+          </p>
+        </section>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+      </div>
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+    </div>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+    <script>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+      // Optional reveal.js plugins
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+      ]
+      });
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+    </script>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
-			</div>
-
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
+  </body>
 </html>
